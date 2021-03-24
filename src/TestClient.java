@@ -13,10 +13,10 @@ import javax.ws.rs.core.Response;
 public class TestClient {
 
 	public static void main(String[] args) {
-		Client client = ClientBuilder.newClient(); // to be able to call a rest based webservice, we need instance of the client class, this client class comes from jax-rs and its role is to enable us to make requests to a server
+		Client client = ClientBuilder.newClient(); // to be able to call a rest based webservice, i need instance of the client class, this client class comes from jax-rs and its role is to make requests to a server
 
 ////	code to get a specific movie
-//		Response response = client.target("http://localhost:8080/ServerProgrammering/webservice/movies/87") // this is where we specify the url of the resource that we are accessing .
+//		Response response = client.target("http://localhost:8080/ServerProgrammering/webservice/movies/87") // this is where i specify the url of the resource that im accessing .
 //				.request().buildGet().invoke();
 //		
 //		System.out.println(response.getStatus());
@@ -34,7 +34,7 @@ public class TestClient {
 //		newMovie.setYear(1972);
 //		newMovie.setDescription("The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.");
 //
-//		Entity newMovieEntity = Entity.entity(newMovie, "application/JSON"); // to be able to post we need the Entity object
+//		Entity newMovieEntity = Entity.entity(newMovie, "application/JSON"); // to be able to post i need the Entity object
 //		Response response = client.target("http://localhost:8080/ServerProgrammering/webservice/movies").request()
 //				.buildPost(newMovieEntity).invoke();
 //
